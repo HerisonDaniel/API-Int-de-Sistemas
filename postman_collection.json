@@ -1,0 +1,59 @@
+{
+  "info": {
+    "name": "API Monitoramento de Alagamentos",
+    "_postman_id": "12345678-90ab-cdef-1234-567890abcdef",
+    "description": "Cole\u00e7\u00e3o de testes da API de Monitoramento e Alerta de Alagamentos em Fortaleza",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Enviar dados do sensor",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"sensor_id\\\": \\\"SENSOR_MUCURIPE_01\\\",\\n  \\\"chuva_mm\\\": 62,\\n  \\\"data_hora\\\": \\\"2025-09-08T14:35:00Z\\\"\\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/sensores/dados",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "sensores",
+            "dados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar alertas por sensor",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/alertas/SENSOR_MUCURIPE_01",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "alertas",
+            "SENSOR_MUCURIPE_01"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
