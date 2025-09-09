@@ -103,15 +103,24 @@ Rodar com:
 pytest
 
 ## 📂 Estrutura do Repositório
-projeto-alagamentos/
+**projeto-alagamentos/**
+
 │── src/
+
 │   └── main.py          # Código principal da API
+
 │── tests/
+
 │   └── test_api.py      # Testes unitários
+
 │── docs/
+
 │   └── arquitetura.png  # (diagrama a ser adicionado)
+
 │── postman_collection.json
+
 │── README.md
+
 │── requirements.txt
 
 ## 🧪 Postman/Insomnia
