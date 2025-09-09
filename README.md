@@ -28,7 +28,7 @@ Defesa Civil/App Moradores → recebem alertas emitidos pela API
 
 `[Sensores de Chuva]` --> `[API Integração]` --> `[Banco de Dados Alertas]`
                                       \
-                                       --> `[Aplicativo Defesa Civil / Moradores]`
+                                       └── --> `[Aplicativo Defesa Civil / Moradores]`
 
 ## 📡 Endpoints da API
 1. POST /sensores/dados
