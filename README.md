@@ -1,11 +1,11 @@
-#🌧️ Atividade Parcial - Integração de Sistema - API de Monitoramento e Alerta de Alagamentos em Fortaleza
+# 🌧️ Atividade Parcial - Integração de Sistema - API de Monitoramento e Alerta de Alagamentos em Fortaleza
 
-##📌 Objetivo
+## 📌 Objetivo
 Este projeto tem como objetivo desenvolver uma **API de integração** entre sistemas de sensores pluviométricos e o sistema da Defesa Civil de Fortaleza.
 
 A API coleta dados de chuva em tempo real, processa regras de risco e emite alertas de alagamento para comunidades vulneráveis (ex.: Praia do Futuro, Mucuripe, Pirambu), contribuindo com o ODS 11 – Cidades e comunidades sustentáveis.
 
-##👥 Equipe
+## 👥 Equipe
 
 Herison Daniel Wanderley  – 2315221 - Responsável pela documentação de requisitos, execução da primeira fase de implementação, realização dos primeiros testes e elaboração do relatório final.
 
@@ -16,7 +16,7 @@ Talles de Lima Pereira    – 2326201  - Responsável pela terceira fase de impl
 João Eduardo Lúcio Araújo – 291356   - Responsável pela segunda fase de testes, verificando a qualidade e o funcionamento das implementações.
 
 
-##🏗️ Arquitetura da Solução
+## 🏗️ Arquitetura da Solução
 
 A solução integra dois sistemas distintos:
 
@@ -30,7 +30,7 @@ Defesa Civil/App Moradores → recebem alertas emitidos pela API
                                       \
                                        --> `[Aplicativo Defesa Civil / Moradores]`
 
-##📡 Endpoints da API
+## 📡 Endpoints da API
 1. POST /sensores/dados
 
 Recebe dados de chuva de um sensor e avalia risco de alagamento.
@@ -77,7 +77,7 @@ chuva_mm > 50 → risco de alagamento
 
 chuva_mm < 30 → situação normal
 
-##▶️ Como Executar o Projeto
+## ▶️ Como Executar o Projeto
 Pré-requisitos
 
 Python 3.9+
@@ -96,13 +96,13 @@ Swagger UI → http://127.0.0.1:8000/docs
 
 ReDoc → http://127.0.0.1:8000/redoc
 
-##✅ Testes
+## ✅ Testes
 
 Rodar com:
 
 pytest
 
-##📂 Estrutura do Repositório
+## 📂 Estrutura do Repositório
 projeto-alagamentos/
 │── src/
 │   └── main.py          # Código principal da API
@@ -114,20 +114,20 @@ projeto-alagamentos/
 │── README.md
 │── requirements.txt
 
-##🧪 Postman/Insomnia
+## 🧪 Postman/Insomnia
 
 Arquivo postman_collection.json incluído no repositório
 
 Permite simular requisições aos endpoints
 
-##📄 requirements.txt
+## 📄 requirements.txt
 fastapi==0.111.0
 uvicorn[standard]==0.30.1
 pydantic==2.7.1
 pytest==8.2.2
 httpx==0.27.0
 
-##📌 Explicação das dependências
+## 📌 Explicação das dependências
 
 fastapi → framework principal da API
 
@@ -139,7 +139,7 @@ pytest → framework de testes unitários
 
 httpx → cliente HTTP usado internamente nos testes com TestClient
 
-##▶️ Como instalar
+## ▶️ Como instalar
 
 Após criar o ambiente virtual, rodar:
 
@@ -163,7 +163,7 @@ pip install -r requirements.txt
 
  Coleção Postman/Insomnia exportada
 
-📖 Referências
+## 📖 Referências
 
 FastAPI Documentation
 
