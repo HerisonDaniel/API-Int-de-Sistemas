@@ -115,7 +115,7 @@ pytest
 ```
 ## 🧪 Postman/Insomnia
 
-Arquivo postman_collection.json incluído no repositório
+Arquivo `postman_collection.json` incluído no repositório
 
 Permite simular requisições aos endpoints
 
